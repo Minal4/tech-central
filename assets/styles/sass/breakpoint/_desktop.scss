@@ -1,0 +1,13 @@
+@media screen and (min-width: 1024px) {
+    .news-right {
+        grid-column: auto;
+    }
+
+    .news>.headline:not(:last-child):after {
+        content: "";
+    }
+
+    .subscription form .input-field {
+        flex-wrap: nowrap;
+    }
+}

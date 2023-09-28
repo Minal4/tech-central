@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 20px;
+    }
+
+    .news>.headline:not(:last-child):after {
+        content: none;
+    }
+
+    .news-right {
+        grid-column: span 2;
+    }
+
+    .news {
+
+        .headline {
+            .news-content {
+                text-align: center;
+            }
+        }
+
+        >:not(:last-child) {
+            position: relative;
+
+            &:after {
+                content: "";
+                height: 100%;
+                width: 1px;
+                background-color: $border_color;
+                position: absolute;
+                top: 0;
+                right: -20px;
+            }
+        }
+    }
+
+    figure,
+    p {
+        margin-bottom: 21px;
+    }
+}
